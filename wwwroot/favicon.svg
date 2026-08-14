@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>Charlotte</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffb7dd"/>
+      <stop offset="1" stop-color="#c77dba"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="7" fill="#20203a"/>
+  <rect x="4" y="4" width="56" height="56" rx="4" fill="url(#bg)" stroke="#fff" stroke-width="3"/>
+  <path d="M45 20c-3-4-7-6-13-6-10 0-17 7-17 18s7 18 17 18c6 0 11-2 14-7l-7-6c-2 3-4 4-7 4-5 0-8-4-8-9s3-9 8-9c3 0 5 1 7 4z" fill="#20203a" stroke="#fff" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M7 8h50" stroke="#fff" stroke-width="2" opacity=".55"/>
+</svg>
