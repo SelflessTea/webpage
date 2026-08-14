@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Charlotte, also known as SelflessTea — C# and Python developer, dreamer, and fluffy-cat enthusiast.">
+  <title>Charlotte's Home Page!!!</title>
+  <link rel="stylesheet" href="/site.css?v=8">
+  <script src="/site.js?v=2" defer></script>
+</head>
+<body>
+  <main class="page">
+    <div class="ticker">
+      <marquee scrollamount="5">★ WELCOME TO MY CORNER OF THE WORLD WIDE WEB ★</marquee>
+    </div>
+
+    <header class="hero">
+      <div>
+        <div class="sparkle">✦ ✧ ✦ ✧ ✦</div>
+        <h1>Charlotte</h1>
+        <div class="handle">a.k.a. SelflessTea</div>
+      </div>
+    </header>
+
+    <section class="content">
+      <div class="window">
+        <div class="titlebar">
+          <span>about_me.txt</span>
+          <span class="window-controls">
+            <button type="button" aria-label="Minimize About" title="Minimize">_</button>
+            <button type="button" aria-label="Maximize About" title="Maximize">□</button>
+            <button type="button" aria-label="Close About" title="Close">×</button>
+          </span>
+        </div>
+        <div class="window-body">
+          <p>Hi! I'm <strong>Charlotte</strong>. I am a huge daydreamer, I love playing videogames~ :3</p>
+          <table class="facts">
+            <tr><td>Username</td><td>SelflessTea &gt;w&lt;</td></tr>
+            <tr><td>Languages</td><td>C# and Python (in the process of learning)</td></tr>
+            <tr><td>Current status</td><td>helplessly bored... endlessly anxious... kill me plz</td></tr>
+            <tr><td>Discord</td><td>@selflesstea</td></tr>
+            <tr><td>GitHub</td><td><a href="https://github.com/SelflessTea">@SelflessTea</a></td></tr>
+            <tr><td>Pronouns.page</td><td><a href="https://en.pronouns.page/@selflesstea">@selflesstea</a></td></tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="window games-window">
+        <div class="titlebar">
+          <span>★ favourite_games.xls ★</span>
+          <span class="window-controls">
+            <button type="button" aria-label="Minimize Favorite Games" title="Minimize">_</button>
+            <button type="button" aria-label="Maximize Favorite Games" title="Maximize">□</button>
+            <button type="button" aria-label="Close Favorite Games" title="Close">×</button>
+          </span>
+        </div>
+        <div class="window-body">
+          <table class="game-table">
+            <thead>
+              <tr>
+                <th>Game</th>
+                <th>Art</th>
+                <th>Vibe</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Minecraft</strong><br><span class="game-stars">★★★★★</span></td>
+                <td><img src="/images/minecraft-fanart.jpg" alt="Minecraft"></td>
+                <td>I LUV BUILDING~ :3 :3</td>
+              </tr>
+              <tr>
+                <td><strong>Celeste</strong><br><span class="game-stars">★★★★★</span></td>
+                <td><img src="/images/celeste-fanart.jpg" alt="Celeste"></td>
+                <td>Made me rage quit and then come back again, a hundred times over</td>
+              </tr>
+              <tr>
+                <td><strong>OMORI</strong><br><span class="game-stars">★★★★★</span></td>
+                <td><img src="/images/omori-fanart.jpg" alt="Omori"></td>
+                <td>The one fever dream that you'll never forget.</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p class="art-credits">
+            Fan-art credits:
+            <a href="https://wallpapers-clan.com/es/desktop-wallpapers/minecraft-world-scenery/" target="_blank" rel="noreferrer">Minecraft landscape</a> ·
+            <a href="https://tysontan.com/gallery/gallery-others/celeste-madeline/" target="_blank" rel="noreferrer">Celeste by Tyson Tan</a> ·
+            <a href="https://art.alphacoders.com/arts/view/144397" target="_blank" rel="noreferrer">OMORI community art</a>
+          </p>
+        </div>
+      </div>
+
+      <p class="big-dream">🚧 NO PROJECTS YET — BIG THINGS ARE UNDER CONSTRUCTION 🚧</p>
+
+      <div class="cat-zone">
+        <strong>Certified Cat Appreciation Zone</strong>
+        <div class="cat-window">
+          <div class="cat-titlebar">
+            <span>random_cat.jpg</span>
+            <span class="window-controls">
+              <button type="button" aria-label="Minimize Cat Picture" title="Minimize">_</button>
+              <button type="button" aria-label="Maximize Cat Picture" title="Maximize">□</button>
+              <button type="button" aria-label="Close Cat Picture" title="Close">×</button>
+            </span>
+          </div>
+          <div class="cat-picture-frame">
+            <img id="random-cat" src="/api/cat" alt="A random cat">
+          </div>
+          <div class="cat-window-footer">
+            <button id="next-cat" type="button">Next cat ▶</button>
+            <span id="cat-status" role="status" aria-live="polite">Please pet responsibly.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="window paint-window" id="paint-window">
+        <div class="titlebar">
+          <span>paint.exe</span>
+          <span class="window-controls">
+            <button type="button" aria-label="Minimize Paint" title="Minimize">_</button>
+            <button type="button" aria-label="Maximize Paint" title="Maximize">□</button>
+            <button type="button" aria-label="Close Paint" title="Close">×</button>
+          </span>
+        </div>
+        <div class="window-body">
+          <div class="paint-heading">
+            <h2>Send me your drawing!</h2>
+            <p>Completely anonymous! &gt;w&lt;</p>
+          </div>
+
+          <div class="paint-app">
+            <div class="paint-toolbar" aria-label="Drawing tools">
+              <div class="paint-icons" role="group" aria-label="Tools">
+                <button id="paint-pencil" type="button" class="active" title="Pencil" aria-label="Pencil">✎</button>
+                <button id="paint-eraser" type="button" title="Eraser" aria-label="Eraser">▱</button>
+                <button id="paint-clear" type="button" title="Clear canvas" aria-label="Clear canvas">🗑</button>
+              </div>
+
+              <div class="brush-sizes" role="group" aria-label="Brush size">
+                <button type="button" class="brush-size" data-size="2" title="Tiny brush" aria-label="Tiny brush"><span style="--dot: 2px"></span></button>
+                <button type="button" class="brush-size active" data-size="5" title="Small brush" aria-label="Small brush"><span style="--dot: 5px"></span></button>
+                <button type="button" class="brush-size" data-size="10" title="Medium brush" aria-label="Medium brush"><span style="--dot: 10px"></span></button>
+                <button type="button" class="brush-size" data-size="18" title="Large brush" aria-label="Large brush"><span style="--dot: 18px"></span></button>
+              </div>
+
+              <div class="paint-palette" role="group" aria-label="Paint colors">
+                <button type="button" class="paint-swatch active" data-color="#000000" style="--swatch: #000000" aria-label="Black"></button>
+                <button type="button" class="paint-swatch" data-color="#808080" style="--swatch: #808080" aria-label="Gray"></button>
+                <button type="button" class="paint-swatch" data-color="#800000" style="--swatch: #800000" aria-label="Maroon"></button>
+                <button type="button" class="paint-swatch" data-color="#808000" style="--swatch: #808000" aria-label="Olive"></button>
+                <button type="button" class="paint-swatch" data-color="#008000" style="--swatch: #008000" aria-label="Green"></button>
+                <button type="button" class="paint-swatch" data-color="#008080" style="--swatch: #008080" aria-label="Teal"></button>
+                <button type="button" class="paint-swatch" data-color="#000080" style="--swatch: #000080" aria-label="Navy"></button>
+                <button type="button" class="paint-swatch" data-color="#800080" style="--swatch: #800080" aria-label="Purple"></button>
+                <button type="button" class="paint-swatch" data-color="#ffffff" style="--swatch: #ffffff" aria-label="White"></button>
+                <button type="button" class="paint-swatch" data-color="#c0c0c0" style="--swatch: #c0c0c0" aria-label="Silver"></button>
+                <button type="button" class="paint-swatch" data-color="#ff0000" style="--swatch: #ff0000" aria-label="Red"></button>
+                <button type="button" class="paint-swatch" data-color="#ffff00" style="--swatch: #ffff00" aria-label="Yellow"></button>
+                <button type="button" class="paint-swatch" data-color="#00ff00" style="--swatch: #00ff00" aria-label="Lime"></button>
+                <button type="button" class="paint-swatch" data-color="#00ffff" style="--swatch: #00ffff" aria-label="Cyan"></button>
+                <button type="button" class="paint-swatch" data-color="#0000ff" style="--swatch: #0000ff" aria-label="Blue"></button>
+                <button type="button" class="paint-swatch" data-color="#ff00ff" style="--swatch: #ff00ff" aria-label="Magenta"></button>
+              </div>
+            </div>
+
+            <div class="canvas-shell">
+              <canvas id="paint-canvas" width="300" height="300" aria-label="Drawing canvas"></canvas>
+            </div>
+
+            <div class="message-area">
+              <button id="message-toggle" type="button" class="message-toggle" aria-expanded="false" aria-controls="drawing-message-box">
+                pssst... want to attach some text to your drawing? :D
+              </button>
+              <div id="drawing-message-box" class="message-box" hidden>
+                <label for="drawing-message">message.txt</label>
+                <textarea id="drawing-message" maxlength="1000" rows="5" placeholder="Type something nice..."></textarea>
+                <span id="message-count">0 / 1000</span>
+              </div>
+            </div>
+
+            <div class="paint-actions">
+              <button id="paint-send" type="button" class="send-drawing">Send ✉</button>
+              <span id="paint-status" role="status" aria-live="polite"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      You are visitor <span class="counter loading" id="visitor-counter" aria-busy="true">000000</span><br><br>
+      <span>Enjoy your stay >w<</span>
+    </footer>
+  </main>
+</body>
+</html>
