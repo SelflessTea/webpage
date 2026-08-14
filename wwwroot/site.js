@@ -48,7 +48,6 @@
   const canvas = document.querySelector("#paint-canvas");
   if (!canvas) return;
 
-  const paintWindow = document.querySelector("#paint-window");
   const context = canvas.getContext("2d", { alpha: false });
   const pencil = document.querySelector("#paint-pencil");
   const eraser = document.querySelector("#paint-eraser");
@@ -171,9 +170,7 @@
 
         status.className = "success";
         status.textContent = "Thank you so much~ :3";
-        window.setTimeout(() => {
-          paintWindow.hidden = true;
-        }, 650);
+        send.hidden = true;
       } catch (error) {
         status.className = "error";
         status.textContent = error.message;
